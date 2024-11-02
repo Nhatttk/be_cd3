@@ -52,32 +52,32 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
-    "api.middleware.log_user_agent.LogUserAgentMiddleware",
+    # "api.middleware.log_user_agent.LogUserAgentMiddleware",
 ]
 
-LOGGING = {
-    "version": 1,
-    "disable_existing_loggers": False,
-    "handlers": {
-        "console": {
-            "class": "logging.StreamHandler",
-        },
-    },
-    "loggers": {
-        "": {
-            "handlers": ["console"],
-            "level": "INFO",
-        },
-        "django": {
-            "handlers": ["console"],
-            "level": "INFO",
-        },
-        "__main__": {
-            "handlers": ["console"],
-            "level": "INFO",
-        },
-    },
-}
+# LOGGING = {
+#     "version": 1,
+#     "disable_existing_loggers": False,
+#     "handlers": {
+#         "console": {
+#             "class": "logging.StreamHandler",
+#         },
+#     },
+#     "loggers": {
+#         "": {
+#             "handlers": ["console"],
+#             "level": "INFO",
+#         },
+#         "django": {
+#             "handlers": ["console"],
+#             "level": "INFO",
+#         },
+#         "__main__": {
+#             "handlers": ["console"],
+#             "level": "INFO",
+#         },
+#     },
+# }
 
 
 ROOT_URLCONF = 'todoList.urls'
